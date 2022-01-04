@@ -10,3 +10,86 @@ body {
 a {
 	color: inherit;
 }
+
+/* css cho modal */
+#modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal .modal-content {
+	width: 80%;
+	color: #000;
+	margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 0;
+	position: relative;
+	background-color: #fefefe;
+	margin-top: 10px;
+	animation-name: animateTop;
+	animation-duration: 0.8s;
+}
+
+@keyframes animateTop {
+	from {
+		top: 150px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+.modal-content .modal-header {
+	padding: 20px 20px;
+	background-color: rgb(2, 160, 81);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+.modal-header .title {
+	font-size: 22px;
+	font-weight: 600;
+}
+.modal-header .close {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.modal-content .modal-body {
+	padding: 16px 20px;
+}
+
+.modal-content .modal-footer {
+	padding: 16px 18px;
+	display: flex;
+	justify-content: flex-end;
+	border-top: 1px solid #ddd;
+}
+
+.modal-footer button {
+	padding: 10px 14px;
+	min-width: 100px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #fff;
+	border: none;
+	text-transform: uppercase;
+}
+.modal-footer button.submit-modal {
+	background-color: #1340a7;
+}
+.modal-footer button.cancel-modal {
+	background-color: rgb(131, 108, 108);
+	margin-left: 20px;
+}
+/* css cho modal */

@@ -24,7 +24,9 @@
 					<ul class="list-menu">
 						<li class="item-menu"><a href="javascript:;">Trang chủ</a></li>
 						<li class="item-menu">
-							<a href="javascript:;">Danh sách công việc</a>
+							<a href="javascript:;" onclick="showListTodos()"
+								>Danh sách công việc</a
+							>
 						</li>
 						<li class="item-menu"><a href="javascript:;">Cài đặt</a></li>
 					</ul>
@@ -34,6 +36,25 @@
 				<!-- Menu footer -->
 				<!-- Menu footer -->
 			</div>
+
+			<!-- modal -->
+			<div id="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="title">Modal header</h3>
+						<span class="close">&times;</span>
+					</div>
+					<div class="modal-body">
+						<p>Nội dung modal</p>
+					</div>
+					<div class="modal-footer">
+						<button class="submit-modal">Ok</button>
+						<button class="cancel-modal" onclick="closeModal()">Cancel</button>
+					</div>
+				</div>
+			</div>
+			<!-- modal -->
 		</div>
 	</body>
 </html>
+<script src="/assets/js/main.js"></script>
