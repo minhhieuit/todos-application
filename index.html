@@ -10,6 +10,13 @@
 			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@300;600&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+			integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/grid.css" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
@@ -26,7 +33,7 @@
 					autoplay
 				></video>
 				<!-- Menu header-->
-				<div class="menu-header">
+				<div class="header">
 					<ul class="list-menu">
 						<li class="item-menu"><a href="javascript:;">Trang chủ</a></li>
 						<li class="item-menu">
@@ -45,6 +52,16 @@
 				<!-- Menu header-->
 
 				<!-- Menu footer -->
+				<div class="footer">
+					<div class="controls-music">
+						<div id="play" onclick="playMusic(true)" class="active">
+							<i class="fas fa-play"></i>
+						</div>
+						<div id="pause" onclick="playMusic(false)">
+							<i class="fas fa-pause"></i>
+						</div>
+					</div>
+				</div>
 				<!-- Menu footer -->
 			</div>
 		</div>

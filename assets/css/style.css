@@ -16,12 +16,12 @@ h1 {
 	margin: 0;
 }
 
-.menu-header {
+.header {
 	position: absolute;
 	width: 100%;
 }
 
-.menu-header ul {
+.header ul {
 	list-style: none;
 	text-align: center;
 	background: rgb(100 60 68 / 24%);
@@ -46,4 +46,27 @@ li.item-menu {
 
 .item-menu a:hover {
 	color: #ed880a;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgb(100 60 68 / 24%);
+	padding: 26px 18px;
+	text-align: center;
+}
+
+.controls-music #play {
+	display: none;
+}
+.controls-music #play.active {
+	display: block;
+}
+.controls-music #pause {
+	display: none;
+}
+.controls-music #pause.active {
+	display: block;
 }
