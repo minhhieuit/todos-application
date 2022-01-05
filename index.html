@@ -34,7 +34,7 @@
 				></video>
 				<!-- Menu header-->
 				<div class="header">
-					<ul class="list-menu">
+					<!-- <ul class="list-menu">
 						<li class="item-menu"><a href="javascript:;">Trang chủ</a></li>
 						<li class="item-menu">
 							<a href="javascript:;" onclick="showListTodos()"
@@ -47,18 +47,39 @@
 								>Toàn màn hình</a
 							>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 				<!-- Menu header-->
 
 				<!-- Menu footer -->
 				<div class="footer">
-					<div class="controls-music">
-						<div id="play" onclick="playMusic(true)" class="active">
+					<ul class="list-menu">
+						<li class="item-menu">
+							<a href="javascript:;" onclick="showListTodos()"
+								>Danh sách công việc</a
+							>
+						</li>
+						<li class="item-menu"><a href="javascript:;">Cài đặt</a></li>
+						<li class="item-menu">
+							<a href="javascript:;" onclick="go_full_screen()"
+								>Toàn màn hình</a
+							>
+						</li>
+					</ul>
+					<div class="controls-music" onclick="playMusic()">
+						<div id="play" class="btn-control active">
 							<i class="fas fa-play"></i>
 						</div>
-						<div id="pause" onclick="playMusic(false)">
+						<div id="pause" class="btn-control">
 							<i class="fas fa-pause"></i>
+						</div>
+					</div>
+					<div class="detail-task">
+						<span class="time-task">25:00</span>
+						<div class="title-task">
+							<marquee width="100%" direction="left" scrollamount="3">
+								This is a sample scrolling text that has scrolls texts to left.
+							</marquee>
 						</div>
 					</div>
 				</div>
@@ -82,6 +103,15 @@
 			</div>
 		</div>
 		<!-- modal -->
+
+		<!-- Audio player -->
+		<audio
+			id="audio-player"
+			src="/assets/audio/Keyboard-Typing.mp3"
+			hidden
+		></audio>
+		<!-- Audio player -->
 	</body>
 </html>
+<script src="/assets/js/player.js"></script>
 <script src="/assets/js/main.js"></script>

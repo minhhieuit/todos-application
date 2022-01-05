@@ -30,6 +30,9 @@ h1 {
 ul.list-menu {
 	display: flex;
 	justify-content: center;
+	list-style: none;
+	text-align: center;
+	flex: 2;
 }
 
 li.item-menu {
@@ -54,19 +57,73 @@ li.item-menu {
 	bottom: 0;
 	width: 100%;
 	background: rgb(100 60 68 / 24%);
-	padding: 26px 18px;
 	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
+.controls-music {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0.4;
+}
+
+.controls-music:hover {
+	cursor: pointer;
+}
+
+.controls-music .btn-control {
+	font-size: 20px;
+	border: 1px solid;
+	width: 42px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	animation-name: showBtn;
+	animation-duration: 0.4s;
+}
 .controls-music #play {
 	display: none;
 }
 .controls-music #play.active {
-	display: block;
+	display: flex;
 }
 .controls-music #pause {
 	display: none;
 }
 .controls-music #pause.active {
-	display: block;
+	display: flex;
+}
+
+@keyframes showBtn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.detail-task {
+	display: flex;
+	flex: 2;
+	align-items: center;
+}
+
+.detail-task .title-task {
+	flex: 3;
+	text-align: left;
+	overflow: hidden;
+}
+
+.title-task marquee {
+	font-size: 24px;
+}
+
+.detail-task .time-task {
+	flex: 1;
+	font-size: 28px;
 }
