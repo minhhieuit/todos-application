@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/grid.css" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
@@ -14,7 +20,7 @@
 			<div class="container">
 				<video
 					id="player"
-					src="https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/scenes/chill-vibes/BDR%20Day-Christmas%20ver%20112521%20%281%29.mp4"
+					src="/assets/videos/video1.mp4"
 					loop
 					muted
 					autoplay
@@ -29,6 +35,11 @@
 							>
 						</li>
 						<li class="item-menu"><a href="javascript:;">Cài đặt</a></li>
+						<li class="item-menu">
+							<a href="javascript:;" onclick="go_full_screen()"
+								>Toàn màn hình</a
+							>
+						</li>
 					</ul>
 				</div>
 				<!-- Menu header-->
@@ -36,25 +47,24 @@
 				<!-- Menu footer -->
 				<!-- Menu footer -->
 			</div>
-
-			<!-- modal -->
-			<div id="modal">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h3 class="title">Modal header</h3>
-						<span class="close">&times;</span>
-					</div>
-					<div class="modal-body">
-						<p>Nội dung modal</p>
-					</div>
-					<div class="modal-footer">
-						<button class="submit-modal">Ok</button>
-						<button class="cancel-modal" onclick="closeModal()">Cancel</button>
-					</div>
+		</div>
+		<!-- modal -->
+		<div id="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="title">Modal header</h3>
+					<span class="close">&times;</span>
+				</div>
+				<div class="modal-body">
+					<p>Nội dung modal</p>
+				</div>
+				<div class="modal-footer">
+					<button class="submit-modal">Ok</button>
+					<button class="cancel-modal" onclick="closeModal()">Cancel</button>
 				</div>
 			</div>
-			<!-- modal -->
 		</div>
+		<!-- modal -->
 	</body>
 </html>
 <script src="/assets/js/main.js"></script>
